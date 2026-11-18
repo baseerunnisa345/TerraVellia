@@ -1,0 +1,44 @@
+{
+  "site": {
+    "name": "TerraVellia",
+    "url": "https://gardening.bilalmania.com"
+  },
+  "categories": [
+    {
+      "slug": "vegetable-gardening",
+      "name": "Vegetable Gardening",
+      "intro": "Growing your own vegetables is one of the most satisfying things a garden can offer. These ideas cover sunny beds, shady corners, small balconies and big backyards, with practical advice on soil, spacing, watering and timing. You will find layouts for tomatoes, leafy greens, root vegetables and beans, plus simple ways to keep pests down without chemicals. Whether you are planting your first row of lettuce or planning a full kitchen garden, start here and grow food you will actually love to eat."
+    },
+    {
+      "slug": "container-gardening",
+      "name": "Container Gardening",
+      "intro": "No yard? No problem. Container gardening lets you grow herbs, vegetables and flowers on a balcony, patio, doorstep or sunny windowsill. These ideas show which pots, soil mixes and watering routines work best, how to group plants that like the same conditions, and how to make a small space look generous. From self-watering planters to stacked strawberry towers, you will find practical, low-cost ways to start growing today, even if all you have is one sunny corner."
+    },
+    {
+      "slug": "raised-beds",
+      "name": "Raised Beds",
+      "intro": "Raised beds give you better soil, better drainage and a garden that is easier on your back. These ideas cover cedar, stone and recycled-material beds in every size, plus layouts for vegetables, herbs and flowers. You will learn how deep to build, what to fill beds with, and how to arrange plants so every inch earns its keep. Whether you have a tiny courtyard or a full backyard, a raised bed is the fastest way to a productive, tidy garden."
+    },
+    {
+      "slug": "herb-gardens",
+      "name": "Herb Gardens",
+      "intro": "Fresh herbs turn ordinary cooking into something special, and they are among the easiest plants to grow. These ideas cover sunny windowsill pots, kitchen-door herb spirals, shady mint patches and full herb beds, with tips on soil, watering and harvesting so your plants stay productive all season. Grow basil, rosemary, mint, parsley and more, and keep a steady supply of fresh flavour within arm's reach of your kitchen."
+    },
+    {
+      "slug": "flower-beds",
+      "name": "Flower Beds",
+      "intro": "Flower beds are where a garden shows its personality. These ideas mix colour, height and season so your beds look good from spring to autumn, with planting plans for sunny borders, shady corners and pollinator-friendly spaces. You will find combinations that work in real soil and real weather, plus simple care routines that keep blooms coming. Start with one bed, and let the colour spread from there."
+    },
+    {
+      "slug": "indoor-plants",
+      "name": "Indoor Plants",
+      "intro": "Indoor plants bring life to every room, clean the air and ask for very little in return. These ideas cover low-light survivors, statement floor plants, trailing vines for shelves and easy-care collections for beginners. You will learn which plants suit each room, how often to water, and how to spot trouble early. Whether you want one hardy plant or a full indoor jungle, there is a green companion here for your home."
+    },
+    {
+      "slug": "seasonal-planting-guides",
+      "name": "Seasonal Planting Guides",
+      "intro": "Good gardens follow the seasons. These guides tell you what to plant, sow and harvest in spring, summer, autumn and winter, so you always know what to do next. You will find month-by-month checklists, frost dates explained simply, and ideas for keeping colour and food coming all year. Follow the season, work with your climate, and your garden will reward you in every month of the year."
+    }
+  ],
+  "articles": []
+}
