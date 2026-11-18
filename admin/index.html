@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin | TerraVellia</title>
+<meta name="description" content="TerraVellia article generator — private admin tool.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1f3a2b">
+<link rel="canonical" href="https://gardening.bilalmania.com/admin/">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+<a class="logo" href="/"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#2f6b47"/><ellipse cx="16" cy="16" rx="7" ry="10" fill="#fbf8f2"/><path d="M16 7v18" stroke="#2f6b47" stroke-width="1.6"/></svg>TerraVellia</a>
+<span style="margin-left:auto;color:var(--muted);font-size:.9rem">Admin — article generator</span>
+</div></header>
+<main id="main" class="admin">
+<div class="gate" id="gate">
+<h1>TerraVellia Admin</h1>
+<p class="note">This page generates article files. It is a deterrent-only passphrase gate — not real security — and the page is noindex and disallowed in robots.txt.</p>
+<p id="gate-note" class="note"></p>
+<label for="gate-pass">Passphrase</label>
+<input type="password" id="gate-pass" autocomplete="off">
+<p id="gate-error" style="color:#b3261e"></p>
+<button class="btn" id="gate-unlock" type="button">Unlock</button>
+<p class="note">No passphrase set yet? The placeholder hash in admin.js lets you in with any value — set your own SHA-256 hash in admin.js (see README) to enable the gate.</p>
+</div>
+
+<div id="app" hidden>
+<h1>New article</h1>
+<p class="note">Fill in the form, add 25–40 ideas with images, then check the pre-flight list. Exports unlock only when every check is green. Nothing is uploaded anywhere — files download to your computer, and you commit them to GitHub.</p>
+
+<fieldset><legend>Article details</legend>
+<label for="f-title">Title (number-led, keyword-first) <span class="counter" id="c-title">0/60</span></label>
+<input type="text" id="f-title" placeholder="30 Raised Bed Vegetable Garden Ideas" maxlength="120">
+<label for="f-slug">Slug (lowercase, hyphens, no number)</label>
+<input type="text" id="f-slug" placeholder="raised-bed-vegetable-garden-ideas">
+<div class="row">
+<div><label for="f-category">Category</label>
+<select id="f-category">
+<option value="vegetable-gardening">Vegetable Gardening</option>
+<option value="container-gardening">Container Gardening</option>
+<option value="raised-beds" selected>Raised Beds</option>
+<option value="herb-gardens">Herb Gardens</option>
+<option value="flower-beds">Flower Beds</option>
+<option value="indoor-plants">Indoor Plants</option>
+<option value="seasonal-planting-guides">Seasonal Planting Guides</option>
+</select></div>
+<div><label for="f-keyword">Focus keyword</label>
+<input type="text" id="f-keyword" placeholder="raised bed vegetable garden ideas"></div>
+</div>
+<label for="f-meta">Meta description <span class="counter" id="c-meta">0/155</span></label>
+<input type="text" id="f-meta" placeholder="Short description with the keyword, a benefit and a soft call to action." maxlength="200">
+<div class="row">
+<div><label for="f-published">Publish date</label><input type="date" id="f-published"></div>
+<div><label for="f-modified">Updated date</label><input type="date" id="f-modified"></div>
+</div>
+<label for="f-intro">Intro (60–120 words, keyword in the first sentence)</label>
+<textarea id="f-intro"></textarea>
+<label for="f-heroalt">Hero image alt text</label>
+<input type="text" id="f-heroalt" placeholder="Descriptive alt text for the first image">
+<label><input type="checkbox" id="f-make500"> Also note a 500w variant is wanted (handled when images are supplied in both sizes)</label>
+</fieldset>
+
+<fieldset><legend>Ideas — <span id="idea-count">0 of 25–40 ideas</span></legend>
+<div id="ideas"></div>
+<button class="btn" id="btn-add-idea" type="button">+ Add idea</button>
+<h3>Paste bulk</h3>
+<p class="note">One idea per line, format: <code>1. Title | description</code></p>
+<textarea id="bulk-text" placeholder="1. Keyhole Raised Bed | A round bed with a compost basket in the centre…"></textarea>
+<button class="btn btn--ghost" id="btn-bulk" type="button">Add from text</button>
+</fieldset>
+
+<fieldset><legend>Takeaways — <span id="takeaway-count">0 of 3–5 takeaways</span></legend>
+<div id="takeaways"></div>
+<button class="btn btn--ghost" id="btn-add-takeaway" type="button">+ Add takeaway</button>
+</fieldset>
+
+<fieldset><legend>FAQs — <span id="faq-count">1 of 7–8 FAQs</span></legend>
+<div id="faqs"></div>
+<button class="btn btn--ghost" id="btn-add-faq" type="button">+ Add FAQ</button>
+</fieldset>
+
+<fieldset><legend>Related articles</legend>
+<div id="related"><p class="note">Loading suggestions from articles.json…</p></div>
+</fieldset>
+
+<fieldset><legend>Pre-flight checklist</legend>
+<ul class="checklist" id="checklist"></ul>
+<p id="export-note" class="note">Exports unlock when every check above is green.</p>
+<div class="actions">
+<button id="btn-export-html" type="button" disabled>Download article HTML</button>
+<button id="btn-export-zip" type="button" disabled>Download images ZIP</button>
+<button id="btn-export-json" type="button" disabled>Download updated articles.json</button>
+<button id="btn-export-sitemap" type="button" disabled>Download regenerated sitemap.xml</button>
+</div>
+<label for="out-listings">Listing snippet (paste between LISTING markers on the homepage and category page)</label>
+<textarea class="output" id="out-listings" readonly></textarea>
+<button class="btn btn--ghost" id="btn-copy-listings" type="button">Generate &amp; copy snippet</button>
+</fieldset>
+
+<fieldset><legend>Preview</legend>
+<div class="actions">
+<button class="btn btn--ghost" id="btn-preview" type="button">Render preview</button>
+<button class="btn btn--ghost" type="button" data-preview-width="390px">Mobile 390px</button>
+<button class="btn btn--ghost" type="button" data-preview-width="100%">Desktop</button>
+</div>
+<iframe class="preview-frame" id="preview-frame" title="Article preview" srcdoc="<p style='font-family:sans-serif;padding:1rem'>Preview will appear here.</p>"></iframe>
+</fieldset>
+
+<fieldset><legend>Draft</legend>
+<p class="note" id="draft-note">Drafts save to this browser only (localStorage).</p>
+<div class="actions">
+<button class="btn btn--ghost" id="btn-save-draft" type="button">Save draft</button>
+<button class="btn btn--ghost" id="btn-clear-draft" type="button">Clear draft</button>
+<button class="btn btn--ghost" id="btn-export-draft" type="button">Export draft JSON</button>
+<label class="btn btn--ghost" for="file-import-draft" style="cursor:pointer">Import draft JSON</label>
+<input type="file" id="file-import-draft" accept="application/json" hidden>
+</div>
+</fieldset>
+
+<fieldset class="steps"><legend>How to publish</legend>
+<ol>
+<li>Download the article HTML and the images ZIP from the pre-flight section above.</li>
+<li>Unzip the ZIP into the repo root — files land in <code>articles/&lt;slug&gt;/index.html</code> and <code>assets/img/&lt;slug&gt;/</code>.</li>
+<li>Replace <code>data/articles.json</code> and <code>sitemap.xml</code> with the downloaded versions.</li>
+<li>Paste the listing snippet between the <code>LISTING:START/END</code> markers on the homepage and the category page.</li>
+<li>Commit and push: <code>git add . &amp;&amp; git commit -m "Add &lt;slug&gt;" &amp;&amp; git push</code> — Vercel auto-deploys.</li>
+<li>Check the live article, then pin it from the page using the Save buttons.</li>
+</ol>
+</fieldset>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap"><p class="footer-note">© <span data-year>2026</span> TerraVellia · Admin area — not indexed.</p></div></footer>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/admin.js" defer></script>
+</body>
+</html>
