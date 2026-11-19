@@ -2,50 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://gardening.bilalmania.com/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/about/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/contact/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/privacy-policy/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/terms/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/category/vegetable-gardening/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/category/container-gardening/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/category/raised-beds/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/category/herb-gardens/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/category/flower-beds/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/category/indoor-plants/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://gardening.bilalmania.com/category/seasonal-planting-guides/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://gardening.bilalmania.com/articles/christmas-container-planter-ideas/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image><image:loc>https://gardening.bilalmania.com/assets/img/christmas-container-planter-ideas/01-classic-evergreen-urn-with-red-berries.webp</image:loc><image:title>30 Christmas Container Planter Ideas</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://gardening.bilalmania.com/articles/january-garden-planning-ideas/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image><image:loc>https://gardening.bilalmania.com/assets/img/january-garden-planning-ideas/01-sketch-your-2027-garden-plan-on-paper.webp</image:loc><image:title>30 January Garden Planning Ideas</image:title></image:image>
   </url>
 </urlset>
