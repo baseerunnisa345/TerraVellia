@@ -220,6 +220,18 @@
       "published": "2026-11-24",
       "modified": "2026-11-24",
       "featured": false
+    },
+    {
+      "slug": "winter-greenhouse-gardening-ideas",
+      "title": "30 Winter Greenhouse Gardening Ideas",
+      "metaDescription": "30 winter greenhouse gardening ideas — insulation, heating, ventilation, watering and what to grow in an unheated or heated greenhouse.",
+      "category": "seasonal-planting-guides",
+      "count": 30,
+      "hero": "/assets/img/winter-greenhouse-gardening-ideas/01-how-an-unheated-greenhouse-works-in-winter.webp",
+      "heroAlt": "An unheated greenhouse with winter salads and tender plants under glass",
+      "published": "2026-11-24",
+      "modified": "2026-11-24",
+      "featured": false
     }
   ]
 }
