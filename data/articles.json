@@ -256,6 +256,18 @@
       "published": "2026-11-24",
       "modified": "2026-11-24",
       "featured": false
+    },
+    {
+      "slug": "freezing-fresh-herbs",
+      "title": "30 Ways to Freeze Fresh Herbs",
+      "metaDescription": "30 ways to freeze fresh herbs — ice cube trays, olive oil and butter cubes, blanching and vacuum sealing, plus storage that keeps flavour.",
+      "category": "herb-gardens",
+      "count": 30,
+      "hero": "/assets/img/freezing-fresh-herbs/01-freeze-herbs-in-water-ice-cubes.webp",
+      "heroAlt": "Fresh herbs frozen in ice cube trays ready for winter cooking",
+      "published": "2026-11-24",
+      "modified": "2026-11-24",
+      "featured": false
     }
   ]
 }
