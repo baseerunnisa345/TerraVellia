@@ -208,6 +208,18 @@
       "published": "2026-11-24",
       "modified": "2026-11-24",
       "featured": false
+    },
+    {
+      "slug": "winter-composting-ideas",
+      "title": "30 Winter Composting Ideas",
+      "metaDescription": "30 winter composting ideas to keep your heap alive in the cold — insulation, browns, hot composting, bokashi, wormeries and a spring restart.",
+      "category": "seasonal-planting-guides",
+      "count": 30,
+      "hero": "/assets/img/winter-composting-ideas/01-why-compost-slows-down-in-winter.webp",
+      "heroAlt": "A compost heap insulated with straw bales in a winter garden",
+      "published": "2026-11-24",
+      "modified": "2026-11-24",
+      "featured": false
     }
   ]
 }
