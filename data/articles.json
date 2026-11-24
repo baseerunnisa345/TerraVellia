@@ -196,6 +196,18 @@
       "published": "2026-11-24",
       "modified": "2026-11-24",
       "featured": false
+    },
+    {
+      "slug": "sprouts-indoors-winter",
+      "title": "29 Sprouts to Grow Indoors This Winter",
+      "metaDescription": "29 sprouts to grow indoors this winter — alfalfa, mung bean, lentil and radish in a jar, with soaking, rinsing and food-safety tips.",
+      "category": "vegetable-gardening",
+      "count": 29,
+      "hero": "/assets/img/sprouts-indoors-winter/01-alfalfa-sprouts-in-a-jar.webp",
+      "heroAlt": "Sprout jars with alfalfa, mung bean and lentil sprouts on a kitchen shelf",
+      "published": "2026-11-24",
+      "modified": "2026-11-24",
+      "featured": false
     }
   ]
 }
